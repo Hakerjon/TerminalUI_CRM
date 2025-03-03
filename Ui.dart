@@ -1,4 +1,3 @@
-
 import 'ombor.dart';
 import 'operator_rejim.dart';
 
@@ -40,23 +39,14 @@ kirishUI(String? title, String? login, String? parol, String? enter) {
 
   void authMatnJoyiParol(String parol) {
     int boshJoy = qatorUzunligi - parol.length - 2 * devorUzunligi - 5;
-    // int chapBoshJoy = boshJoy ~/ 2;
-    // int ongBoshJoy = boshJoy - chapBoshJoy;
     print(devorcha + " " + "⠒⠒⠕ $parol" + " " * boshJoy + devorcha);
   }
 
   void pustoyZona(String pustoy) {
     int boshJoy = qatorUzunligi - pustoy.length - 1 * devorUzunligi - 3;
-    // int chapBoshJoy = boshJoy ~/ 2;
-    // int ongBoshJoy = boshJoy - chapBoshJoy;
     print(devorcha + " " + pustoy + " " * boshJoy + devorcha);
   }
-  //   void pustoyQator(String pustoy) {
-  //   int boshJoy = qatorUzunligi - enter.length - 1 * devorUzunligi - 3;
-  //   // int chapBoshJoy = boshJoy ~/ 2;
-  //   // int ongBoshJoy = boshJoy - chapBoshJoy;
-  //   print(devorcha + " " + pustoy + " " * boshJoy + devorcha);
-  // }
+
 
   print(devorcha * (qatorUzunligi ~/ devorUzunligi));
   titleJoyi(title ?? "");
@@ -64,12 +54,7 @@ kirishUI(String? title, String? login, String? parol, String? enter) {
   authMatnJoyiLogin(login ?? "");
   authMatnJoyiParol(parol ?? "");
   titleJoyi(enter ?? "");
-  // // List buyurtmaEmpty = [""];
-  // chiqarish("");
-  // chiqarish(matnsavatcha ?? "");
-  // // chiqarish3(buyurtmalaringiz ?? buyurtmaEmpty);
-  // chiqarish(tolovga ?? "");
-  // // chiqarish3(buyurtmalaringiz);
+
 
   print(devorcha * (qatorUzunligi ~/ devorUzunligi));
 }
@@ -102,16 +87,10 @@ operatorUI_kirishi(
 
   void pustoyZona(String pustoy) {
     int boshJoy = qatorUzunligi - pustoy.length - 1 * devorUzunligi - 3;
-    // int chapBoshJoy = boshJoy ~/ 2;
-    // int ongBoshJoy = boshJoy - chapBoshJoy;
+
     print(devorcha + " " + pustoy + " " * boshJoy + devorcha);
   }
-  //   void pustoyQator(String pustoy) {
-  //   int boshJoy = qatorUzunligi - enter.length - 1 * devorUzunligi - 3;
-  //   // int chapBoshJoy = boshJoy ~/ 2;
-  //   // int ongBoshJoy = boshJoy - chapBoshJoy;
-  //   print(devorcha + " " + pustoy + " " * boshJoy + devorcha);
-  // }
+
 
   print(devorcha * (qatorUzunligi ~/ devorUzunligi));
   titleJoyi(title ?? "");
@@ -119,12 +98,6 @@ operatorUI_kirishi(
   authMatnJoyiLogin(matn1 ?? "");
   authMatnJoyiParol(matn2 ?? "");
   titleJoyi(quit ?? "");
-  // // List buyurtmaEmpty = [""];
-  // chiqarish("");
-  // chiqarish(matnsavatcha ?? "");
-  // // chiqarish3(buyurtmalaringiz ?? buyurtmaEmpty);
-  // chiqarish(tolovga ?? "");
-  // // chiqarish3(buyurtmalaringiz);
 
   print(devorcha * (qatorUzunligi ~/ devorUzunligi));
 }
@@ -405,53 +378,7 @@ kassachaUI_main(String? title, chapknopka, ongknopka, String kassadanTovarKodi,
     }
   }
 
-  // kassaUI(List savatcha) {
-  //   var topilganMahsulot = mahsulotTopKassaga(kassadanTovarKodi);
-  //   var topilganMahsulotSavatga = savatdanTopKassaga2(kassadanTovarKodi);
-  //   String? mahsulotNomchasi = topilganMahsulot?.nomi;
-
-  //   for (int i = 0; i < ombor.length;) {
-  //     String tartibRaqamjoyi = topilganMahsulot!.tartibRaqami.toString();
-  //     String qiymati = topilganMahsulot.qiymati;
-  //     // String nowSavatSoni = topilganMahsulot.mavjud.toString();
-  //     String sotishNarxi = topilganMahsulot.sotishNarxi.toString();
-  //     if (savatcha.contains(mahsulotNomchasi)) {
-  //       topilganMahsulotSavatga!.mavjud += tovarMiqdoriHozirda!;
-  //     } else {
-  //       savatcha.add(Mahsulot(
-  //           tartibRaqami: topilganMahsulot.tartibRaqami,
-  //           kod: topilganMahsulot.kod,
-  //           nomi: topilganMahsulot.nomi,
-  //           mavjud: tovarMiqdoriHozirda!,
-  //           qiymati: topilganMahsulot.qiymati,
-  //           sotishNarxi: topilganMahsulot.sotishNarxi,
-  //           kelishNarxi: topilganMahsulot.kelishNarxi));
-  //     }
-
-  //     // String tartibRaqamSavatda = savatcha.length.toString();
-  //     int tartib = 1;
-  //     for (int o = 0; o < savatcha.length; o++) {
-  //       if (savatcha.contains(mahsulotNomchasi)) {
-  //         var savatdaBorTartibi = savatdanTopKassaga(tartib);
-  //         print(savatcha);
-  //         String allSavatNo = savatdaBorTartibi!.tartibRaqami.toString();
-  //         String allSavatTovar = savatdaBorTartibi.nomi;
-  //         String allSavatQiymati = savatdaBorTartibi.qiymati;
-  //         String allSavatSotishNarxi = savatdaBorTartibi.sotishNarxi.toString();
-  //         String savatdagiTovarsoni =
-  //             topilganMahsulotSavatga!.mavjud.toString();
-  //         // topilganMahsulotSavatdan.mavjud += tovarMiqdoriHozirda;
-  //         print(
-  //             "${tartibRaqamJoyi(tartib.toString() + '. ')} ${mahsulotJoyi(allSavatTovar)}  ${tovarSoniJoyi(savatdagiTovarsoni)} ${qiymatJoyi(allSavatQiymati)}  ${sotishNarxJoyi(allSavatSotishNarxi)} ");
-  //         }  else  {
-  //           print(
-  //               "${tartibRaqamJoyi(tartib.toString() + '. ')} ${mahsulotJoyi(mahsulotNomchasi!)}  ${tovarSoniJoyi(tovarMiqdori)} ${qiymatJoyi(qiymati)}  ${sotishNarxJoyi(sotishNarxi)} ");
-  //       }
-  //       tartib++;
-  //     }
-  //     break;
-  //   }
-  // }
+  
 
   void authMatnJoyiLogin(String chapknopka) {
     int boshJoy =
