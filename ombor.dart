@@ -16,12 +16,23 @@ class Mahsulot {
     required this.kelishNarxi,
     required this.sotishNarxi,
   });
+
+}
+
+
+class MahsulotSavatda {
+  double mavjudSavatda;
+
+  MahsulotSavatda({
+    required this.mavjudSavatda,
+  });
+
 }
 
 List<Mahsulot> ombor = [
   Mahsulot(
       tartibRaqami: 1,
-      kod: "A001",
+      kod: "1001",
       nomi: "Un",
       mavjud: 500,
       qiymati: "KG",
@@ -29,7 +40,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 6000),
   Mahsulot(
       tartibRaqami: 2,
-      kod: "A002",
+      kod: "1002",
       nomi: "Shakar",
       mavjud: 300,
       qiymati: "KG",
@@ -37,7 +48,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 9000),
   Mahsulot(
       tartibRaqami: 3,
-      kod: "A003",
+      kod: "1003",
       nomi: "Tuz",
       mavjud: 200,
       qiymati: "KG",
@@ -45,7 +56,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 1500),
   Mahsulot(
       tartibRaqami: 4,
-      kod: "A004",
+      kod: "1004",
       nomi: "Choy",
       mavjud: 150,
       qiymati: "KG",
@@ -53,7 +64,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 35000),
   Mahsulot(
       tartibRaqami: 5,
-      kod: "A005",
+      kod: "1005",
       nomi: "Sut",
       mavjud: 200,
       qiymati: "Dona",
@@ -61,7 +72,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 10000),
   Mahsulot(
       tartibRaqami: 6,
-      kod: "A006",
+      kod: "1006",
       nomi: "Yog'",
       mavjud: 400,
       qiymati: "KG",
@@ -69,7 +80,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 27000),
   Mahsulot(
       tartibRaqami: 7,
-      kod: "A007",
+      kod: "1007",
       nomi: "Makaron",
       mavjud: 500,
       qiymati: "KG",
@@ -77,7 +88,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 7000),
   Mahsulot(
       tartibRaqami: 8,
-      kod: "A008",
+      kod: "1008",
       nomi: "Go'sht",
       mavjud: 150,
       qiymati: "KG",
@@ -85,7 +96,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 75000),
   Mahsulot(
       tartibRaqami: 9,
-      kod: "A009",
+      kod: "1009",
       nomi: "Kartoshka",
       mavjud: 800,
       qiymati: "KG",
@@ -93,7 +104,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 3500),
   Mahsulot(
       tartibRaqami: 10,
-      kod: "A010",
+      kod: "1010",
       nomi: "Piyoz",
       mavjud: 600,
       qiymati: "KG",
@@ -101,7 +112,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 2500),
   Mahsulot(
       tartibRaqami: 11,
-      kod: "A011",
+      kod: "1011",
       nomi: "Sabzi",
       mavjud: 500,
       qiymati: "KG",
@@ -109,7 +120,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 3000),
   Mahsulot(
       tartibRaqami: 12,
-      kod: "A012",
+      kod: "1012",
       nomi: "Karam",
       mavjud: 400,
       qiymati: "KG",
@@ -117,7 +128,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 3000),
   Mahsulot(
       tartibRaqami: 13,
-      kod: "A013",
+      kod: "1013",
       nomi: "Tuxum",
       mavjud: 600,
       qiymati: "Dona",
@@ -125,7 +136,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 1500),
   Mahsulot(
       tartibRaqami: 14,
-      kod: "A014",
+      kod: "1014",
       nomi: "Pechenye",
       mavjud: 300,
       qiymati: "KG",
@@ -133,7 +144,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 20000),
   Mahsulot(
       tartibRaqami: 15,
-      kod: "A015",
+      kod: "1015",
       nomi: "Shokolad",
       mavjud: 200,
       qiymati: "Dona",
@@ -141,7 +152,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 6000),
   Mahsulot(
       tartibRaqami: 16,
-      kod: "A016",
+      kod: "1016",
       nomi: "Gazli ichimlik",
       mavjud: 250,
       qiymati: "Dona",
@@ -149,7 +160,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 5000),
   Mahsulot(
       tartibRaqami: 17,
-      kod: "A017",
+      kod: "1017",
       nomi: "Non",
       mavjud: 700,
       qiymati: "Dona",
@@ -157,7 +168,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 3000),
   Mahsulot(
       tartibRaqami: 18,
-      kod: "A018",
+      kod: "1018",
       nomi: "Quritilgan meva",
       mavjud: 150,
       qiymati: "KG",
@@ -165,7 +176,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 35000),
   Mahsulot(
       tartibRaqami: 19,
-      kod: "A019",
+      kod: "1019",
       nomi: "Olma",
       mavjud: 500,
       qiymati: "KG",
@@ -173,7 +184,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 12000),
   Mahsulot(
       tartibRaqami: 20,
-      kod: "A020",
+      kod: "1020",
       nomi: "Banan",
       mavjud: 400,
       qiymati: "KG",
@@ -181,7 +192,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 18000),
   Mahsulot(
       tartibRaqami: 21,
-      kod: "A021",
+      kod: "1021",
       nomi: "Uzum",
       mavjud: 300,
       qiymati: "KG",
@@ -189,7 +200,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 14000),
   Mahsulot(
       tartibRaqami: 22,
-      kod: "A022",
+      kod: "1022",
       nomi: "Qovun",
       mavjud: 200,
       qiymati: "KG",
@@ -197,7 +208,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 10000),
   Mahsulot(
       tartibRaqami: 23,
-      kod: "A023",
+      kod: "1023",
       nomi: "Tarvuz",
       mavjud: 250,
       qiymati: "KG",
@@ -205,7 +216,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 9000),
   Mahsulot(
       tartibRaqami: 24,
-      kod: "A024",
+      kod: "1024",
       nomi: "Suv",
       mavjud: 500,
       qiymati: "Dona",
@@ -213,7 +224,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 4000),
   Mahsulot(
       tartibRaqami: 25,
-      kod: "A025",
+      kod: "1025",
       nomi: "Ketchup",
       mavjud: 180,
       qiymati: "Dona",
@@ -221,7 +232,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 14000),
   Mahsulot(
       tartibRaqami: 26,
-      kod: "A026",
+      kod: "1026",
       nomi: "Mayonez",
       mavjud: 200,
       qiymati: "Dona",
@@ -229,7 +240,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 15000),
   Mahsulot(
       tartibRaqami: 27,
-      kod: "A027",
+      kod: "1027",
       nomi: "Tovuq goshti",
       mavjud: 300,
       qiymati: "KG",
@@ -237,7 +248,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 35000),
   Mahsulot(
       tartibRaqami: 28,
-      kod: "A028",
+      kod: "1028",
       nomi: "Kolbasa",
       mavjud: 250,
       qiymati: "KG",
@@ -245,7 +256,7 @@ List<Mahsulot> ombor = [
       sotishNarxi: 45000),
   Mahsulot(
       tartibRaqami: 29,
-      kod: "A029",
+      kod: "1029",
       nomi: "Muzqaymoq",
       mavjud: 300,
       qiymati: "Dona",
@@ -253,10 +264,11 @@ List<Mahsulot> ombor = [
       sotishNarxi: 6000),
   Mahsulot(
       tartibRaqami: 30,
-      kod: "A030",
+      kod: "1030",
       nomi: "Yong'oq",
       mavjud: 200,
       qiymati: "KG",
       kelishNarxi: 25000,
       sotishNarxi: 30000),
 ];
+List<Mahsulot> savatcha = [];
